@@ -1,4 +1,5 @@
 class Denizen {
+
   constructor(options) {
     // console.log("constructing:", this.constructor.name, options);
     this.lastTime = new Date();

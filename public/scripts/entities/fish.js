@@ -1,4 +1,5 @@
 class Fish extends Denizen {
+
   constructor(options) {
     super(options);
     this.imageUri = '/images/fish01.png';

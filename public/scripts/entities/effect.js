@@ -1,4 +1,5 @@
 class Effect extends Denizen {
+
   constructor(options) {
     super(options);
     this.imageUri = options.imageUri;

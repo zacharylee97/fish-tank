@@ -1,4 +1,5 @@
 class Seed extends Denizen {
+
   constructor(options) {
     super(options);
     this.waterFriction = 0.3;      // "0.3" means "lose 30% per second"

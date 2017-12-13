@@ -1,4 +1,5 @@
 class GoFish extends Fish {
+
   constructor(options) {
     super(options);
     this.surgeSecondsLeft = 0;
