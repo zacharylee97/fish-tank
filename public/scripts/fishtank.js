@@ -45,7 +45,7 @@ class Fishtank {
     var $victim = $('#' + id);
     $victim.off();
     $victim.css({ transition: 'all ' + duration });
-    $victim.css({ 
+    $victim.css({
       opacity: '0',
       width: $victim.width() * 3,
       height: $victim.height() * 3,
@@ -78,8 +78,8 @@ class Fishtank {
   drawGraphics() {
     this.runPhysics();  // TODO: maybe this should be on a separate setInterval
     var $fishtank = $('#' + this.divName);
-    var center_x = Math.floor(window.innerWidth / 2);
-    var floor_y = Math.floor(window.innerHeight * 0.95);
+    var centerX = Math.floor(window.innerWidth / 2);
+    var floorY  = Math.floor(window.innerHeight * 0.95);
     for (var id in this.denizens) {
       var denizen = this.denizens[id];
       var renderRules = denizen.renderRules();
@@ -96,7 +96,7 @@ class Fishtank {
       }
 
       if (renderRules.x !== undefined) {
-        $denizen.css('left', renderRules.x + center_x);
+        $denizen.css('left', renderRules.x + centerX);
       }
       if (renderRules.y !== undefined) {
         $denizen.css('bottom', renderRules.y + 10);
@@ -111,10 +111,10 @@ class Fishtank {
 
   getBounds() {
     return {
-      min_x: - window.innerWidth / 2,
-      max_x: window.innerWidth / 2,
-      min_y: -10,
-      max_y: window.innerHeight - 10,
+      minX: - window.innerWidth / 2,
+      maxX: window.innerWidth / 2,
+      minY: -10,
+      maxY: window.innerHeight - 10,
     };
   }
 

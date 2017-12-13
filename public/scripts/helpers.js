@@ -34,16 +34,16 @@ class Vector {
     return d;
   }
 
-  scale_mut(scalar) {
+  /*scale_mut(scalar) {
     this.x *= scalar;
     this.y *= scalar;
-  }
+  }*/
 
   scale(scalar) {
     return new Vector(this.x * scalar, this.y * scalar);
   }
 
-  add_mut(vector) {
+  addMut(vector) {
     this.x += vector.x;
     this.y += vector.y;
   }
@@ -56,12 +56,12 @@ class Vector {
     return this.distance(new Vector(0, 0));
   }
 
-  normalize_mut(target_magnitude) {
+/*  normalize_mut(target_magnitude) {
     if (target_magnitude < 0.00001) {
       this.x = this.y = 0;
     }
     var scale_factor = target_magnitude / this.magnitude();
     this.scale_mut(scale_factor);
-  }
+  }*/
 }
 
